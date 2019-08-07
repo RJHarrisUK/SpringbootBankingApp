@@ -19,7 +19,7 @@ public class PrizeServiceImpl implements PrizeService {
 		if (value == 5) {
 			return "Congratulations you have won £50";
 		} else {
-			return "Comiserations you have not won anything";
+			return "Commiserations you have not won anything";
 		}
 	}
 }
