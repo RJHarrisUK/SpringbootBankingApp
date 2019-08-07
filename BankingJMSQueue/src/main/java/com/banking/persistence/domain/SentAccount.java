@@ -1,4 +1,4 @@
-package com.queue.domain;
+package com.banking.persistence.domain;
 
 public class SentAccount {
 
@@ -55,12 +55,13 @@ public class SentAccount {
 	public SentAccount() {
 	}
 
-	public SentAccount(SentAccount account) {
-		this.accountId = account.getAccountId();
-		this.firstName = account.getFirstName();
-		this.lastName = account.getLastName();
-		this.accountNumber = account.getAccountNumber();
-		this.prize = account.getPrize();
+	public SentAccount(Long accountId, String firstName, String lastName, String accountNumber, String prize) {
+		super();
+		this.accountId = accountId;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.accountNumber = accountNumber;
+		this.prize = prize;
 	}
 
 }

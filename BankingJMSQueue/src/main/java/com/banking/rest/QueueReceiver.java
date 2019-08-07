@@ -1,11 +1,11 @@
-package com.queue.receiver;
+package com.banking.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
 
-import com.queue.domain.SentAccount;
-import com.queue.repository.ConsumerRepository;
+import com.banking.persistence.domain.SentAccount;
+import com.banking.persistence.repository.ConsumerRepository;
 
 @Component
 public class QueueReceiver {
