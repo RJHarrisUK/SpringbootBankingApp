@@ -20,7 +20,7 @@ export default class Landing extends Component {
 
     getAll = () => {
         axios
-            .get('http://localhost:5000/User/all')
+            .get('http://producer:8080/getAccounts')
             .then(response => {
 
                 this.setState({
