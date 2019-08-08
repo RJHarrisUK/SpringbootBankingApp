@@ -5,5 +5,5 @@ RUN mvn clean package
 FROM java:8
 WORKDIR /opt/website
 COPY --from=maven-build /build/target/BankingAppPrizeGen-0.0.1-SNAPSHOT.jar app.jar
-EXPOSE 8080
+EXPOSE 8078
 ENTRYPOINT ["/usr/bin/java", "-jar", "app.jar"]
