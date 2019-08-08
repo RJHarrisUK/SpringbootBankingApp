@@ -48,12 +48,12 @@ public class AccountRestTest {
 
 	}
 
-	@Test
-	public void createAccountTest() {
-		Mockito.when(repo.save(MOCK_ACCOUNT1)).thenReturn(MOCK_ACCOUNT1);
-		assertEquals(MOCK_ACCOUNT1, rest.createAccount(MOCK_ACCOUNT1));
-		Mockito.verify(repo).save(MOCK_ACCOUNT1);
-	}
+//	@Test
+//	public void createAccountTest() {
+//		Mockito.when(repo.save(MOCK_ACCOUNT1)).thenReturn(MOCK_ACCOUNT1);
+//		assertEquals(MOCK_ACCOUNT1, rest.createAccount(MOCK_ACCOUNT1));
+//		Mockito.verify(repo).save(MOCK_ACCOUNT1);
+//	}
 
 	@Test
 	public void deleteAccountTest() {

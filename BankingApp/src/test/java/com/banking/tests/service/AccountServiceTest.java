@@ -50,12 +50,12 @@ public class AccountServiceTest {
 		Mockito.verify(repo).findAll();
 	}
 
-	@Test
-	public void addAccountTest() {
-		Mockito.when(repo.save(MOCK_ACCOUNT1)).thenReturn(MOCK_ACCOUNT1);
-		assertEquals(MOCK_ACCOUNT1, service.addAccount(MOCK_ACCOUNT1));
-		Mockito.verify(repo).save(MOCK_ACCOUNT1);
-	}
+//	@Test
+//	public void addAccountTest() {
+//		Mockito.when(repo.save(MOCK_ACCOUNT1)).thenReturn(MOCK_ACCOUNT1);
+//		assertEquals(MOCK_ACCOUNT1, service.addAccount(MOCK_ACCOUNT1));
+//		Mockito.verify(repo).save(MOCK_ACCOUNT1);
+//	}
 
 	@Test
 	public void deleteAccountTest() {
