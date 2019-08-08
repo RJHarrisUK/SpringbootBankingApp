@@ -53,8 +53,8 @@ public class AccountRest {
 	// CREATE
 	@PostMapping("/createAccount")
 	public Account createAccount(@RequestBody Account account) {
-		String AccountNumber = restTemplate.getForObject("http://localhost:8079/getNumgen", String.class);
-		String PrizeNumber = restTemplate.getForObject("http://localhost:8078/getPrizegen", String.class);
+		String AccountNumber = restTemplate.getForObject("bankingappnumgen/getNumgen", String.class);
+		String PrizeNumber = restTemplate.getForObject("bankingappprizegen/getPrizegen", String.class);
 		account.setAccountNumber(AccountNumber);
 		account.setPrize(PrizeNumber);
 		return service.addAccount(account);
